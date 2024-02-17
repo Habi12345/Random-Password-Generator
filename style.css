@@ -6,6 +6,7 @@
 
 body{
     background-image: linear-gradient(to right, #002339,  #019f55);
+    background-size: cover;
     font-family: "inter", sans-serif;
 }
 
@@ -69,4 +70,73 @@ span > i:hover{
 }
 button:hover{
     transform: ease 2s;
+    background-color: #00bc64;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;   
+}
+
+/*Media query for screens smaller than 768px*/
+@media screen and (max-width: 767px){
+    .container{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .container > .display{
+        background-color: #fff;
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .display > input{
+        outline: none;
+        border: none;
+        width: 70px;
+        font-size: 15px;
+        color: rgba(72, 72, 72, 0.757);
+    }
+
+    .display > span > i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .container > button{
+        border: 0;
+        outline: 0;
+        background-color: #019f55;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 300;
+        padding: 10px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    footer{
+        font-size: 11px;
+    }
 }
