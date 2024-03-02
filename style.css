@@ -67,9 +67,9 @@ span > i:hover{
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
+    transition: all 0.4s ease-in-out;
 }
 button:hover{
-    transform: ease 2s;
     background-color: #00bc64;
 }
 
